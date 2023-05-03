@@ -1,12 +1,13 @@
 -- set vim options here (vim.<first_key>.<second_key> = value)
 return {
   opt = {
-    -- set to true or false etc.
-    relativenumber = true, -- sets vim.opt.relativenumber
-    number = true, -- sets vim.opt.number
-    spell = false, -- sets vim.opt.spell
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = false, -- sets vim.opt.wrap
+    relativenumber = false, 
+    number = true, 
+    spell = false, 
+    wrap = false, 
+    signcolumn = "yes",
+    foldcolumn = "0",
+    cmdheight = 1,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
