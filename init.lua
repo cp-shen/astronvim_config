@@ -49,6 +49,10 @@ return {
     servers = {
       "lua_ls", "rust_analyzer"
     },
+    setup_handlers = {
+      -- add custom handler
+      rust_analyzer = function(_, opts) require("rust-tools").setup { server = opts } end
+    },
     config = {
       lua_ls = {
         settings = {
