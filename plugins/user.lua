@@ -1,16 +1,17 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
   {
-    "simrat39/rust-tools.nvim",
-    ft = "rust"
-  }
+    "navarasu/onedark.nvim",
+    config = function()
+      require('onedark').setup {
+        style = 'dark',
+        code_style = {
+          comments = 'none',
+          keywords = 'none',
+          functions = 'none',
+          strings = 'none',
+          variables = 'none'
+        },
+      }
+    end
+  },
 }
